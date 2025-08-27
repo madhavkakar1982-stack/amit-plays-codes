@@ -3,6 +3,16 @@ import { Github, ExternalLink, Play, Download, Filter, Search } from 'lucide-rea
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
+// Import project images
+import mysticQuestImg from '@/assets/mystic-quest.jpg';
+import taskflowImg from '@/assets/taskflow.jpg';
+import pixelAdventuresImg from '@/assets/pixel-adventures.jpg';
+import weatherProImg from '@/assets/weather-pro.jpg';
+import spaceDefenderImg from '@/assets/space-defender.jpg';
+import fitnessTrackerImg from '@/assets/fitness-tracker.jpg';
+import codeQuestImg from '@/assets/code-quest.jpg';
+import smartNotesImg from '@/assets/smart-notes.jpg';
+
 const Projects = () => {
   const [filter, setFilter] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
@@ -12,7 +22,7 @@ const Projects = () => {
       id: 1,
       title: 'Mystic Quest RPG',
       description: 'An immersive fantasy RPG featuring a rich storyline, character customization, and strategic combat system. Built with Unity and optimized for mobile devices.',
-      image: '/api/placeholder/600/400',
+      image: mysticQuestImg,
       tech: ['Unity', 'C#', 'Blender', 'Firebase'],
       type: 'Game',
       category: 'Game',
@@ -27,7 +37,7 @@ const Projects = () => {
       id: 2,
       title: 'TaskFlow Mobile',
       description: 'A beautiful and intuitive task management application with real-time synchronization, team collaboration, and smart notifications.',
-      image: '/api/placeholder/600/400',
+      image: taskflowImg,
       tech: ['Flutter', 'Dart', 'Firebase', 'Provider'],
       type: 'App',
       category: 'App',
@@ -42,7 +52,7 @@ const Projects = () => {
       id: 3,
       title: 'Pixel Adventures',
       description: 'A nostalgic 2D platformer game with modern mechanics, beautiful pixel art, and challenging levels that test your skills.',
-      image: '/api/placeholder/600/400',
+      image: pixelAdventuresImg,
       tech: ['Unity', 'C#', 'Photoshop', 'Aseprite'],
       type: 'Game',
       category: 'Game',
@@ -57,7 +67,7 @@ const Projects = () => {
       id: 4,
       title: 'Weather Pro',
       description: 'A comprehensive weather application with hourly forecasts, weather maps, and severe weather alerts.',
-      image: '/api/placeholder/600/400',
+      image: weatherProImg,
       tech: ['Flutter', 'Dart', 'OpenWeather API', 'Provider'],
       type: 'App',
       category: 'App',
@@ -72,7 +82,7 @@ const Projects = () => {
       id: 5,
       title: 'Space Defender',
       description: 'An action-packed space shooter with procedurally generated levels and epic boss battles.',
-      image: '/api/placeholder/600/400',
+      image: spaceDefenderImg,
       tech: ['Unity', 'C#', 'Unity Analytics'],
       type: 'Game',
       category: 'Game',
@@ -87,7 +97,7 @@ const Projects = () => {
       id: 6,
       title: 'Fitness Tracker',
       description: 'A comprehensive fitness tracking app with workout plans, progress tracking, and social features.',
-      image: '/api/placeholder/600/400',
+      image: fitnessTrackerImg,
       tech: ['Flutter', 'Dart', 'Firebase', 'HealthKit'],
       type: 'App',
       category: 'App',
@@ -102,7 +112,7 @@ const Projects = () => {
       id: 7,
       title: 'Code Quest',
       description: 'An educational game that teaches programming concepts through interactive puzzles and challenges.',
-      image: '/api/placeholder/600/400',
+      image: codeQuestImg,
       tech: ['Unity', 'C#', 'Unity UI', 'Firebase'],
       type: 'Game',
       category: 'Game',
@@ -117,7 +127,7 @@ const Projects = () => {
       id: 8,
       title: 'Smart Notes',
       description: 'An intelligent note-taking app with AI-powered organization and cross-platform synchronization.',
-      image: '/api/placeholder/600/400',
+      image: smartNotesImg,
       tech: ['React Native', 'TypeScript', 'Firebase', 'OpenAI'],
       type: 'App',
       category: 'Cross-Platform',
