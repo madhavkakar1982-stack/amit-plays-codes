@@ -241,25 +241,22 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="card-creative">
+            <div className="card-creative opacity-50">
               <h3 className="text-xl font-semibold mb-4">Connect on Social</h3>
               <div className="grid grid-cols-2 gap-4">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
-                    <a
+                    <div
                       key={social.name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-4 bg-muted rounded-xl hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-scale group"
+                      className="p-4 bg-muted rounded-xl cursor-not-allowed"
                     >
                       <div className="flex items-center space-x-3 mb-2">
                         <Icon size={20} />
                         <span className="font-medium">{social.name}</span>
                       </div>
                       <p className="text-xs opacity-80">{social.description}</p>
-                    </a>
+                    </div>
                   );
                 })}
               </div>
