@@ -243,7 +243,7 @@ const Contact = () => {
             {/* Social Links */}
             <div className="card-creative opacity-50">
               <h3 className="text-xl font-semibold mb-4">Connect on Social</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 pointer-events-none select-none" aria-disabled="true">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
