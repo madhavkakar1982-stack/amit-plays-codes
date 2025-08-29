@@ -59,15 +59,12 @@ const Footer = () => {
               {socialLinks.map((social) => {
                 const Icon = social.icon;
                 return (
-                  <a
+                  <div
                     key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-card rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300 hover-scale"
+                    className="w-10 h-10 bg-card rounded-lg flex items-center justify-center text-muted-foreground opacity-50 cursor-not-allowed"
                   >
                     <Icon size={20} />
-                  </a>
+                  </div>
                 );
               })}
             </div>

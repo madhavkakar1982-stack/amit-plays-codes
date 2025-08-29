@@ -333,11 +333,9 @@ const Projects = () => {
                   Start a Project
                 </a>
               </Button>
-              <Button className="btn-outline" asChild>
-                <a href="https://github.com/amitkumargupta" target="_blank" rel="noopener noreferrer">
-                  <Github size={20} className="mr-2" />
-                  View GitHub
-                </a>
+              <Button className="btn-outline opacity-50 cursor-not-allowed" disabled>
+                <Github size={20} className="mr-2" />
+                View GitHub
               </Button>
             </div>
           </div>
